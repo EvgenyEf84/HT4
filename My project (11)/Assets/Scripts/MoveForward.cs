@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    void Update()
+    private void Update()
     {
         var nextPosition = transform.position;
         nextPosition.z += 0.02f;
