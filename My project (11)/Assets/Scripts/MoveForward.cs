@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    private void Update()
+    private float _speed = 0.01f;
+    
+    void Update()
     {
-        var nextPosition = transform.position;
-        nextPosition.z += 0.02f;
-        transform.position = nextPosition;
+        var direction = transform.forward.normalized;
+        transform.Translate(direction*_speed);
     }
 }
