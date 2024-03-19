@@ -9,8 +9,9 @@ public class Expander : MonoBehaviour
 
     private void Update()
     {
-        int increaseNumber = 5;
-        var maxScaleSize = transform.localScale*increaseNumber;
-        transform.localScale = Vector3.Lerp(transform.localScale, maxScaleSize, _speed*Time.deltaTime);
+        //int increaseNumber = 5;
+        //var maxScaleSize = transform.localScale * increaseNumber;
+        //transform.localScale += Vector3.Lerp(transform.localScale, transform.localScale , _speed * Time.deltaTime);
+        transform.localScale += new Vector3(0.5f, +0.5f, 0.5f) * Time.deltaTime;
     }
 }
